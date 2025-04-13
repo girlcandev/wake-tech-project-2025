@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link to CSS file -->
     <link rel="stylesheet" href="style.css"> 
-    <!-- placeholoder for link to JavaScript file -->
-    <script src="PLACEHOLDER.js"></script>
+    <!-- placeholoder for link to JavaScript file 
+    <script src="PLACEHOLDER.js"></script> -->
     <!-- browser tab name -->
     <title>Travel Review Site</title>
 </head>
@@ -15,15 +15,15 @@
         <!-- page header -->
         <h1>Travel Review Site</h1>
     </header>
-    <!-- placeholder for the section that will hold collapsed  reviews-->
+    <!-- placeholder for the section that will hold collapsed reviews-->
     <aside>
         <div class="reviews-list">
             <ul class="reviews-compact">
-                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
-                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
-                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
-                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
-                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+                <li class="review" id="review-compact-1">Review Title: Best trip ever!</li>
+                <li class="review" id="review-compact-2">Review Title: Our family loved Disney</li>
+                <li class="review" id="review-compact-3">Review Title: Amazing Honeymoon in Italy</li>
+                <li class="review" id="review-compact-4">Review Title: Save your money</li>
+                <li class="review" id="review-compact-5">Review Title: A diamond in the rough</li>
             </ul>
         </div>
     </aside>
@@ -32,20 +32,20 @@
         <div id="review-form">
             <h2>Review your travel experience:</h2>
             <!-- not sure if this is correct-->
-            <form action="index.html">
+            <form name="review-form" onsubmit="return validateForm()">
                 <!-- placeholder section for the star icons and hover styling -->
                  <!-- for now I used radio buttons as the placeholder, feel free to modify-->
                 <div id="star-rating">
                     <label for="rating">Rate your trip:</label><br>
-                    <input type="radio" name="rating" id="rating" value="1">
+                    <input type="radio" name="rating" id="rating-1" value="1">
                     <label for="1-star">1-star</label>
-                    <input type="radio" name="rating" id="rating" value="2">
+                    <input type="radio" name="rating" id="rating-2" value="2">
                     <label for="2-stars">2-stars</label>
-                    <input type="radio" name="rating" id="rating" value="3">
+                    <input type="radio" name="rating" id="rating-3" value="3">
                     <label for="3-stars">3-stars</label>
-                    <input type="radio" name="rating" id="rating" value="4">
+                    <input type="radio" name="rating" id="rating-4" value="4">
                     <label for="4-stars">4-stars</label>
-                    <input type="radio" name="rating" id="rating" value="5">
+                    <input type="radio" name="rating" id="rating-5" value="5">
                     <label for="5-stars">5-stars</label><br>
                 </div>
                 <br>
@@ -53,15 +53,15 @@
                 <div id="text-inputs">
                     <!-- travel destination input field -->
                     <label for="destination">Where did you travel?</label><br>
-                    <input type="text" name="destination" id="destination" placeholder="Destination..." maxlength="30" required>
+                    <input type="text" name="destination" id="destination" placeholder="Destination..." maxlength="30">
                     <br><br>
                     <!-- review name input field -->
                     <label for="title">Name your review:</label><br>
-                    <input type="text" name="title" id="title" placeholder="Review Title..." maxlength="30" required>
+                    <input type="text" name="title" id="title" placeholder="Review Title..." maxlength="30">
                     <br><br>
                     <!-- review description input field -->
                     <label for="description">Describe your travels:</label><br>
-                    <textarea name="description" id="description" rows="7" cols="50" placeholder="Share the details!" maxlength="500" required></textarea>
+                    <textarea name="description" id="description" rows="7" cols="50" placeholder="Share the details!" maxlength="500"></textarea>
                     <br><br>
                 </div>
                 <!-- input field for travel image URL -->
