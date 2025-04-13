@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- placeholoder for link to JavaScript file -->
+    <script src="PLACEHOLDER.js"></script>
+    <!-- browser tab name -->
+    <title>Travel Review Site</title>
 </head>
 <body>
-    
+    <header>
+        <!-- page header -->
+        <h1>Travel Review Site</h1>
+    </header>
+    <!-- placeholder for the section that will hold collapsed  reviews-->
+    <aside>
+        <div class="reviews-list">
+            <ul class="reviews-compact">
+                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+                <li class="review" id="review-compact">[Placeholder for compact review text]</li>
+            </ul>
+        </div>
+    </aside>
+    <!-- section where main review input form will display -->
+    <main class="container">
+        <div id="review-form">
+            <h2>Review your travel experience:</h2>
+            <!-- not sure if this is correct-->
+            <form action="index.html">
+                <!-- placeholder section for the star icons and hover styling -->
+                 <!-- for now I used radio buttons as the placeholder, feel free to modify-->
+                <div id="star-rating">
+                    <label for="rating">Rate your trip:</label><br>
+                    <input type="radio" name="rating" id="rating" value="1">
+                    <label for="1-star">1-star</label>
+                    <input type="radio" name="rating" id="rating" value="2">
+                    <label for="2-stars">2-stars</label>
+                    <input type="radio" name="rating" id="rating" value="3">
+                    <label for="3-stars">3-stars</label>
+                    <input type="radio" name="rating" id="rating" value="4">
+                    <label for="4-stars">4-stars</label>
+                    <input type="radio" name="rating" id="rating" value="5">
+                    <label for="5-stars">5-stars</label><br>
+                </div>
+                <br>
+                <!-- section for text input fields -->
+                <div id="text-inputs">
+                    <!-- travel destination input field -->
+                    <label for="destination">Where did you travel?</label><br>
+                    <input type="text" name="destination" id="destination" placeholder="Destination..." maxlength="30" required>
+                    <br><br>
+                    <!-- review name input field -->
+                    <label for="title">Name your review:</label><br>
+                    <input type="text" name="title" id="title" placeholder="Review Title..." maxlength="30" required>
+                    <br><br>
+                    <!-- review description input field -->
+                    <label for="description">Describe your travels:</label><br>
+                    <textarea name="description" id="description" rows="7" cols="50" placeholder="Share the details!" maxlength="500" required></textarea>
+                    <br><br>
+                </div>
+                <!-- input field for travel image URL -->
+                <div id="url-input">
+                    <label for="photos">Add a link to your travel photos:</label><br>
+                    <input type="url" name="photo-url" id="photo-url" placeholder="URL...">
+                </div>
+                <!-- date stamp from when reviewer pressed "submit" -->
+                <div id="datestamp"></div>
+                <br><br>
+                <!-- submit button -->
+                <button type="submit">Submit your review</button>
+            </form>
+        </div>
+        <br><br>
+    </main>
+    <section>
+        <!-- placeholder section where review will display after form is submitted -->
+        <div class="review" id="review-output">
+            <p>[Placeholder for submitted or expanded review text?]</p>
+        </div>
+        <br>
+    </section>
+    <footer>
+        <div>Created by: Ashley, Drew, and Monica as the final project for the Wake Tech course: Web Programmer Using HTML, CSS, & Javascript</div>
+    </footer>
 </body>
 </html>
