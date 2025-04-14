@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link to CSS file -->
     <link rel="stylesheet" href="style.css"> 
-    <!-- link to JavaScript file -->
-    <script src="script.js"></script>
     <!-- browser tab name -->
     <title>Travel Review Site</title>
 </head>
@@ -32,7 +30,7 @@
         <div id="review-form">
             <h2>Review your travel experience:</h2>
             <!-- not sure if this is correct-->
-            <form name="review-form" onsubmit="return validateForm()">
+            <form name="review-form" onsubmit="return validateForm(event)">
                 <!-- placeholder section for the star icons and hover styling -->
                  <!-- for now I used radio buttons as the placeholder, feel free to modify-->
                 <div id="star-rating">
@@ -80,13 +78,13 @@
     </main>
     <section>
         <!-- placeholder section where review will display after form is submitted -->
-        <div class="review" id="submitted-data">
-            <p>[Placeholder for submitted or expanded review text?]</p>
-        </div>
+        <div class="review" id="submitted-data"></div>
         <br>
     </section>
     <footer>
         <div>Created by: Ashley, Drew, and Monica as the final project for the Wake Tech course: Web Programmer Using HTML, CSS, & Javascript</div>
     </footer>
+    <!-- link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
