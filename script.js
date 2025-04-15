@@ -86,7 +86,7 @@ function validateForm(event) {
             <p><strong>Destination:</strong> ${submittedData['Destination']}</p>
             <p><strong>Star Rating:</strong> ${submittedData['Star Rating']}</p>
             <p><strong>Description:</strong> ${submittedData['Description']}</p>
-            <p><strong>Image URL:</strong> ${submittedData['URL Input']}</p>
+            <p><strong>Image URL:</strong> <img src="${submittedData['URL Input']}" alt="An image of our destination"></p>
             <p><strong>Date:</strong> ${submittedData['Datestamp']}</p>
         `;
         document.getElementById('submitted-data').innerHTML = displayMessage;
