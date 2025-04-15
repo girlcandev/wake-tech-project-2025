@@ -5,6 +5,16 @@ body {
     padding: 0;
 }
 
+aside {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+main.container {
+    margin-left: 35%; /* Leaves space for the aside on the left */
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -54,4 +64,20 @@ button {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review .review-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.review.expanded .review-details {
+    display: block;
+}
+
+.review-title {
+    cursor: pointer;
+    font-weight: bold;
 }
