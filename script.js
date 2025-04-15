@@ -92,3 +92,21 @@ function validateForm(event) {
         document.getElementById('submitted-data').innerHTML = displayMessage;
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Hook up the form handler
+    const form = document.forms["review-form"];
+    form.addEventListener("submit", validateForm);
+
+    // Hook up review expansion
+
+    // Handle expand/collapse of compact reviews
+    const reviewTitles = document.querySelectorAll(".review-title");
+
+    reviewTitles.forEach(title => {
+        title.addEventListener("click", () => {
+            const parent = title.parentElement;
+            parent.classList.toggle("expanded");
+        });
+    });
+});
